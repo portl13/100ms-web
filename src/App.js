@@ -291,7 +291,7 @@ export default function App() {
   return (
     <EdtechComponent
       themeConfig={{
-        aspectRatio: process.env.REACT_APP_TILE_SHAPE,
+        aspectRatio: "16-9",
         theme: process.env.REACT_APP_THEME,
         color: process.env.REACT_APP_COLOR,
         logo: "https://portl.live/img/brand/logo.png",
