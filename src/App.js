@@ -54,7 +54,7 @@ if (window.location.host.includes("localhost")) {
   appName = window.location.host.split(".")[0];
 }
 
-document.title = "Portl Live Streaming";
+document.title = 
   process.env.REACT_APP_TITLE || `${appName}'s ${document.title}`;
 
 // TODO: remove now that there are options to change to portrait
