@@ -55,9 +55,7 @@ export const Playlist = ({ type }) => {
   const [open, setOpen] = useState(false);
   const [collapse, setCollapse] = useState(false);
   const isAllowedToPublish = useHMSStore(selectIsAllowedToPublish);
-  if (!isAllowedToPublish.screen || playlist.length === 0) {
-    return null;
-  }
+  
 
   return (
     <Fragment>
