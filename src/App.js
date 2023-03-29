@@ -54,8 +54,7 @@ if (window.location.host.includes("localhost")) {
   appName = window.location.host.split(".")[0];
 }
 
-document.title = 
-  process.env.REACT_APP_TITLE || `${appName}'s ${document.title}`;
+document.title = "PORTL Live";
 
 // TODO: remove now that there are options to change to portrait
 const getAspectRatio = ({ width, height }) => {
