@@ -9,6 +9,7 @@ import { PIP } from "../PIP";
 import { ScreenshareToggle } from "../ScreenShare";
 import { ChatToggle } from "./ChatToggle";
 import { Playlist } from "../Playlist/Playlist";
+import { HMSPlaylistType } from "@100mslive/react-sdk";
 
 export const StreamingFooter = () => {
   return (
@@ -29,6 +30,8 @@ export const StreamingFooter = () => {
         }}
       >
         <AudioVideoToggle />
+        <Playlist type={HMSPlaylistType.audio} />
+        <Playlist type={HMSPlaylistType.video} />
       </AppFooter.Left>
       <AppFooter.Center
         css={{
