@@ -74,7 +74,7 @@ export function EdtechComponent({
   themeConfig: {
     aspectRatio = "1-1",
     font = "Roboto",
-    color = "#2F80FF",
+    color = "#dc3b61",
     theme = "dark",
     logo = "",
     headerPresent = "false",
