@@ -26,7 +26,7 @@ import { ToastContainer } from "./components/Toast/ToastContainer";
 import { hmsActions, hmsNotifications, hmsStats, hmsStore } from "./hms.js";
 import { Confetti } from "./plugins/confetti";
 import { RemoteStopScreenshare } from "./plugins/RemoteStopScreenshare";
-import { getRoutePrefix, shadeColor } from "./common/utils";
+import { getRoutePrefix, isStreamingKit, shadeColor } from "./common/utils";
 import { FeatureFlags } from "./services/FeatureFlags";
 import {
   getBackendEndpoint,
@@ -95,7 +95,7 @@ export function EdtechComponent({
     <ErrorBoundary>
       <HMSThemeProvider
         themeType={theme}
-        aspectRatio={getAspectRatio({ width, height })}
+        aspectRatio={isStreamingKit() ? { width: 16, height: 9 } : { width: 1, height: 1 }}
         theme={{
           colors: {
             brandDefault: color,
