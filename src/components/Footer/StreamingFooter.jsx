@@ -8,6 +8,7 @@ import { MoreSettings } from "../MoreSettings/MoreSettings";
 import { PIP } from "../PIP";
 import { ScreenshareToggle } from "../ScreenShare";
 import { ChatToggle } from "./ChatToggle";
+import { Playlist } from "../Playlist/Playlist";
 
 export const StreamingFooter = () => {
   return (
