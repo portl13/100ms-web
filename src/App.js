@@ -86,10 +86,10 @@ export function EdtechComponent({
   getDetails = () => {},
   authTokenByRoomCodeEndpoint = "",
 }) {
-  const { 0: width, 1: height } = aspectRatio
+  /*const { 0: width, 1: height } = aspectRatio
     .split("-")
     .map(el => parseInt(el));
-
+*/
   const getUserTokenCallback = useCallback(getUserToken, []); //eslint-disable-line
   return (
     <ErrorBoundary>
