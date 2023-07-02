@@ -18,16 +18,18 @@ const fetchWithRetry = async (url, options) => {
 };
 
 export default async function getToken(tokenEndpoint, userId, role, roomId) {
+  console.log("🚀 ~ file: tokenService.js:21 ~ getToken ~ tokenEndpoint, userId, role, roomId:", tokenEndpoint, userId, role, roomId)
   try {
     const response = await fetchWithRetry(`${tokenEndpoint}api/token`, {
       method: "POST",
+
       body: JSON.stringify({
         role,
         room_id: roomId,
         user_id: userId,
       }),
     });
-
+    console.log("🚀 ~ file: tokenService.js:25 ~ getToken ~ response:", response)
     if (!response.ok) {
       let error = new Error("Request failed!");
       error.response = response;
